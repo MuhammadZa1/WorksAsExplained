@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<title>Set Up a NAS for Automatic Home Backups — WorksAsExplained</title>
+<meta name="description" content="A practical guide to choosing, setting up, and configuring a NAS for reliable backups without cloud costs.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set Up a NAS for Automatic Home Backups — WorksAsExplained">
+<meta property="og:description" content="A practical guide to choosing, setting up, and configuring a NAS for reliable backups without cloud costs.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://worksasexplained.com/articles/nas-network-backup-setup.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0F1620">
+<meta property="og:site_name" content="WorksAsExplained">
+<meta property="og:url" content="https://worksasexplained.com/articles/nas-network-backup-setup.html">
+<meta property="og:image" content="https://worksasexplained.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:title" content="Set Up a NAS for Automatic Home Backups — WorksAsExplained">
+<meta name="twitter:description" content="A practical guide to choosing, setting up, and configuring a NAS for reliable backups without cloud costs.">
+<meta name="twitter:image" content="https://worksasexplained.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Set Up a NAS for Automatic Home Backups", "description": "A practical guide to choosing, setting up, and configuring a NAS for reliable backups without cloud costs.", "image": "https://worksasexplained.com/og-image.png", "author": {"@type": "Person", "name": "Muhammad Zakria"}, "publisher": {"@type": "Organization", "name": "WorksAsExplained", "logo": {"@type": "ImageObject", "url": "https://worksasexplained.com/og-image.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://worksasexplained.com/articles/nas-network-backup-setup.html"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://worksasexplained.com/"}, {"@type": "ListItem", "position": 2, "name": "Networking", "item": "https://worksasexplained.com/categories/networking.html"}, {"@type": "ListItem", "position": 3, "name": "Set Up a NAS for Automatic Home Backups", "item": "https://worksasexplained.com/articles/nas-network-backup-setup.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-top wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">WAE</span>
+      <span class="brand-name">WorksAsExplained</span>
+    </a>
+    <div id="site-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input id="site-search-input" type="text" placeholder="Search guides…" autocomplete="off">
+      <div id="site-search-results"></div>
+    </div>
+  </div>
+  <nav class="links wrap">
+      <a href="../index.html"><span class="tag">IDX</span>Home</a>
+      <a href="../about.html"><span class="tag">ABT</span>About</a>
+      <a href="../privacy-policy.html"><span class="tag">PRIV</span>Privacy</a>
+      <a href="../terms.html"><span class="tag">TOS</span>Terms</a>
+      <a href="../contact.html"><span class="tag">CTC</span>Contact</a>
+  </nav>
+</header>
+
+<section class="article-head wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../categories/networking.html">Networking</a><span class="sep">/</span><span class="current" aria-current="page">Set Up a NAS for Automatic Home Backups</span></nav>
+  <span class="eyebrow">Networking · NET-07</span>
+  <h1>Set Up a NAS for Automatic Home Backups</h1>
+  <span class="meta">9 min read · By <a href="../about.html">Muhammad Zakria</a></span>
+</section>
+
+<article class="article-body wrap">
+  <p>A NAS (Network-Attached Storage) is a hard drive connected to your home network that automatically backs up your computers, phones, and photos. Unlike external drives you plug in manually, a NAS is always on and always available. Setup takes an afternoon, but you get backups that actually happen without remembering.</p>
+
+  <h2>NAS vs. external drive vs. cloud backup</h2>
+  <p>An external USB drive is cheap but requires manual plugging-in — most people skip backups because it's inconvenient. Cloud backup (OneDrive, Google One) is automatic but costs monthly and uploads everything to a company's servers. A NAS gives you automatic local backups at one-time cost, privacy (nothing leaves your home), and faster restores than cloud. The tradeoff: NAS costs $150–$600 upfront and uses a small amount of power continuously. If you have under 500 GB of data and rarely back up, an external drive still makes sense. If you have multiple computers or pets/families worth of photos, a NAS is worth it.</p>
+
+  <h2>Which NAS to buy</h2>
+  <p>A two-bay NAS (holds two drives) is the minimum for home use. Synology (DS220j, DS223) and QNAP (TS-253E, TS-464C) are reliable for most homes. Expect to spend $150–$300 for the device plus $60–$120 per drive. Get two matching drives and put them in RAID 1 (mirror), so if one fails, you keep your backups on the other. Avoid single-bay devices unless you're only backing up one laptop — a dead drive means losing everything. Avoid ultra-cheap NAS brands; Synology and QNAP have better software and live longer.</p>
+
+  <h2>Initial setup: hardware first</h2>
+  <p>Install the hard drives into the NAS (usually slide-in trays, no tools needed). Connect the NAS to your router with an ethernet cable — Wi-Fi is slower and less reliable for backups. Plug in power and wait for the startup lights to settle (usually 2–3 minutes). Don't shut it down until setup is complete.</p>
+
+  <h2>Configure RAID 1 before doing anything else</h2>
+  <p>Most NAS devices walk you through RAID setup on first boot. Select "RAID 1" when prompted — this mirrors your data across both drives, protecting you from a single drive failure. RAID 1 uses 50 percent of your total capacity (two 4TB drives give you 4TB of usable space, not 8TB), but that's the cost of protection. Initialize the array and wait for it to complete — this takes several hours for full drives and can't be interrupted. Start this overnight if you're impatient.</p>
+
+  <h2>Assign user accounts with backup permissions</h2>
+  <p>Once RAID is ready, the NAS will prompt you to create an admin account and user accounts. Create one admin account for yourself (store the password securely) and one regular user account for each person backing up data. Each account gets isolated folders — person A's backups go in person A's folder, which person B can't access. This prevents accidental deletes and keeps data organized.</p>
+
+  <h2>Configure automatic computer backups (Windows/Mac)</h2>
+  <p>Most NAS devices include backup software. For Synology, download Synology's backup tool (Hyper Backup for local backups, Cloud Backup if you add cloud redundancy). For QNAP, use QNAP's equivalent (NetBackup). Install the software on your computer, log in with your NAS account credentials, pick which folders to back up (Documents, Pictures, Desktop is typical), and set a schedule (nightly at 2 AM is common). The first backup will be large and take hours — let it finish before sleep-depriving your network with large transfers during working hours.</p>
+
+  <h2>Phone and photo backups</h2>
+  <p>Most NAS devices have mobile apps. Synology has Synology Photos, QNAP has a media app. Configure your phone to automatically backup photos and videos to the NAS while on home Wi-Fi. This usually takes a few minutes to set up but then runs invisible. Stop paying for cloud photo storage once the backups are running reliably — you're not losing anything by keeping them locally as long as your RAID 1 keeps running.</p>
+
+  <h2>How to know your backups are working</h2>
+  <p>Check the NAS admin panel weekly for the first month. You should see backup jobs listed with a "success" status and today's date. If a backup shows "failed," check the error message — usually it's a permissions issue, the NAS ran out of space, or the computer was off. Fix the issue (restart backup service, add capacity, ensure computer is on at backup time) and re-run the backup manually. Once you see three or four successful backups in a row, you're likely good — but keep spot-checking the status page once a month to catch failures early.</p>
+
+  <div class="callout">Set a phone reminder for the first Friday of each month to check that backups still ran successfully. A dead NAS is no backup at all, and disk failures are silent until they happen.</div>
+
+  <h2>When a drive fails (and it will eventually)</h2>
+  <p>RAID 1 gives you a window to act: if one drive fails, the other keeps working, and your data is safe. You'll usually get a warning email or alert in the NAS admin panel. Order a replacement drive, pause backups if you want (backups will continue to the good drive), physically remove the failed drive, insert the new one, and start the RAID rebuild. This can take a full day for large drives, but your data is protected the entire time. After rebuild completes, backups continue normally.</p>
+
+  <h2>Don't rely on RAID as your only backup</h2>
+  <p>RAID 1 protects you from a single drive failure, but not from water damage, theft, or fire. Store at least one full backup offsite — either on an external drive at a friend's house, or add a cloud layer (most NAS devices can back up to cloud cheaply, taking only changed files). The 3-2-1 backup rule: three copies of data, two different media types, one offsite. Your NAS + cloud is that rule.</p>
+
+  <h2>Capacity planning</h2>
+  <p>Buy drives with enough space for at least one year of backups. If you generate 100 GB of new data monthly (photos, documents, work files), a 4TB NAS gives you about 20 months of local backups. Once you hit capacity, either delete oldest backups manually, archive them to an external drive, or upgrade one drive to larger capacity (remove old drive, insert new one, wait for RAID rebuild). Most people never think about this until the NAS is full, so do the math before buying.</p>
+
+</article>
+
+<section class="grid-section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Related guides</h2>
+    </div>
+  </div>
+  <div class="trace-grid wrap" style="padding:0;">
+    <a class="card" href="secure-home-router.html">
+      <span class="ref">NET·08</span>
+      <h3>Lock down your home router in 15 minutes</h3>
+      <p>The settings that actually matter for network security, and the ones you can skip.</p>
+      <span class="read">Read guide →</span>
+    </a>
+    <a class="card" href="speed-up-wifi.html">
+      <span class="ref">NET·01</span>
+      <h3>Why your Wi-Fi is slow (and the fix that actually helps)</h3>
+      <p>Most slow-Wi-Fi advice is guesswork. Here&#x27;s how to find the real bottleneck before you buy anything.</p>
+      <span class="read">Read guide →</span>
+    </a>
+    <a class="card" href="mesh-wifi-setup.html">
+      <span class="ref">NET·02</span>
+      <h3>Set up a mesh Wi-Fi system without the confusion</h3>
+      <p>Choosing the right hardware, placement strategy, and avoiding the common early mistakes.</p>
+      <span class="read">Read guide →</span>
+    </a>
+  </div>
+</section>
+
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+    <span class="copyright">© 2026 WorksAsExplained. All rights reserved.</span>
+  </div>
+</footer>
+
+<div id="cookie-banner">
+  <div class="cookie-inner">
+    <p>We use cookies to run this site and, where enabled, to support personalized advertising through Google AdSense. See our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <div class="cookie-actions">
+      <button class="btn" id="cookie-reject">Reject</button>
+      <button class="btn primary" id="cookie-accept">Accept</button>
+    </div>
+  </div>
+</div>
+<script src="../articles-data.js"></script>
+<script src="../search.js"></script>
+<script src="../cookie-consent.js"></script>
+</body>
+</html>
