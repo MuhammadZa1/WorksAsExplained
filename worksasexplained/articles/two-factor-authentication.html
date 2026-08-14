@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<title>Set Up Two-Factor Authentication the Right Way — WorksAsExplained</title>
+<meta name="description" content="App-based codes, security keys, and the backup-codes step almost everyone skips.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set Up Two-Factor Authentication the Right Way — WorksAsExplained">
+<meta property="og:description" content="App-based codes, security keys, and the backup-codes step almost everyone skips.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://worksasexplained.com/articles/two-factor-authentication.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0F1620">
+<meta property="og:site_name" content="WorksAsExplained">
+<meta property="og:url" content="https://worksasexplained.com/articles/two-factor-authentication.html">
+<meta property="og:image" content="https://worksasexplained.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:title" content="Set Up Two-Factor Authentication the Right Way — WorksAsExplained">
+<meta name="twitter:description" content="App-based codes, security keys, and the backup-codes step almost everyone skips.">
+<meta name="twitter:image" content="https://worksasexplained.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Set Up Two-Factor Authentication the Right Way", "description": "App-based codes, security keys, and the backup-codes step almost everyone skips.", "image": "https://worksasexplained.com/og-image.png", "author": {"@type": "Person", "name": "Muhammad Zakria"}, "publisher": {"@type": "Organization", "name": "WorksAsExplained", "logo": {"@type": "ImageObject", "url": "https://worksasexplained.com/og-image.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://worksasexplained.com/articles/two-factor-authentication.html"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://worksasexplained.com/"}, {"@type": "ListItem", "position": 2, "name": "Security & Privacy", "item": "https://worksasexplained.com/categories/security-privacy.html"}, {"@type": "ListItem", "position": 3, "name": "Set Up Two-Factor Authentication the Right Way", "item": "https://worksasexplained.com/articles/two-factor-authentication.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-top wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">WAE</span>
+      <span class="brand-name">WorksAsExplained</span>
+    </a>
+    <div id="site-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input id="site-search-input" type="text" placeholder="Search guides…" autocomplete="off">
+      <div id="site-search-results"></div>
+    </div>
+  </div>
+  <nav class="links wrap">
+      <a href="../index.html"><span class="tag">IDX</span>Home</a>
+      <a href="../about.html"><span class="tag">ABT</span>About</a>
+      <a href="../privacy-policy.html"><span class="tag">PRIV</span>Privacy</a>
+      <a href="../terms.html"><span class="tag">TOS</span>Terms</a>
+      <a href="../contact.html"><span class="tag">CTC</span>Contact</a>
+  </nav>
+</header>
+
+<section class="article-head wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../categories/security-privacy.html">Security &amp; Privacy</a><span class="sep">/</span><span class="current" aria-current="page">Set Up Two-Factor Authentication the Right Way</span></nav>
+  <span class="eyebrow">Security & Privacy · SEC-01</span>
+  <h1>Set Up Two-Factor Authentication the Right Way</h1>
+  <span class="meta">7 min read · By <a href="../about.html">Muhammad Zakria</a></span>
+</section>
+
+<article class="article-body wrap">
+  <p>Two-factor authentication (2FA) means logging in requires your password plus a second proof — usually a code or a physical key. It's the single most effective step against account takeover, but the way most people set it up leaves a gap: no backup plan for when they lose their phone.</p>
+
+  <h2>The three main types, ranked by strength</h2>
+  <ul>
+    <li><strong>SMS codes</strong> — better than nothing, but vulnerable to SIM-swap attacks where someone convinces your carrier to move your number to their device.</li>
+    <li><strong>Authenticator apps</strong> (Google Authenticator, Authy, Microsoft Authenticator) — generate codes on your device without a network connection, immune to SIM swaps. This is the right default for most people.</li>
+    <li><strong>Security keys</strong> (physical devices like a YubiKey) — the strongest option, immune to phishing since the key checks the site's identity too. Worth it for email and financial accounts.</li>
+  </ul>
+
+  <h2>Step 1: Prioritize which accounts get 2FA first</h2>
+  <p>Start with your email account — it's usually the recovery method for everything else, so it's the highest-value target. Then move to financial accounts, then any account tied to your identity (social media, cloud storage).</p>
+
+  <h2>Step 2: Set up an authenticator app</h2>
+  <p>In the account's security settings, look for "Two-factor authentication" or "2-Step Verification." Choose "Authenticator app," which will show a QR code. Open your authenticator app, add a new account, and scan the code. The app now generates a new 6-digit code every 30 seconds that you'll enter alongside your password at login.</p>
+
+  <h2>Step 3: Save your backup codes — don't skip this</h2>
+  <p>Every major service generates one-time backup codes when you enable 2FA. This is the step almost everyone skips, and it's the one that matters most: if your phone is lost, stolen, or replaced, backup codes are how you get back into your account without waiting on a support ticket. Save them somewhere other than your phone — a password manager's notes field, or printed and stored somewhere secure.</p>
+
+  <h2>Step 4: Plan for a lost or replaced phone</h2>
+  <p>Before you need it, know your recovery path: most authenticator apps let you export or back up your codes to a new phone (Authy does this by default; Google Authenticator added transfer support in recent versions). Set this up when you first install the app, not after you've already lost the old one.</p>
+
+  <h2>A common mistake: only protecting the account, not the recovery method</h2>
+  <p>If your 2FA recovery email is an old account you don't check, or your recovery phone number is out of date, 2FA can lock you out of your own account. Review and update recovery information at the same time you set up 2FA.</p>
+
+  <div class="callout">If you manage several accounts, a password manager with built-in 2FA code storage (like 1Password or Bitwarden) can simplify this significantly — one place for passwords and codes, synced across your devices.</div>
+
+  <h2>Quick setup checklist</h2>
+  <ul>
+    <li>Enable 2FA on email first, then financial and identity-linked accounts.</li>
+    <li>Prefer an authenticator app or security key over SMS where offered.</li>
+    <li>Save backup codes somewhere other than the phone itself.</li>
+    <li>Set up authenticator backup/transfer before you need it, not after.</li>
+    <li>Keep recovery email and phone number current.</li>
+  </ul>
+</article>
+
+<section class="grid-section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Related guides</h2>
+    </div>
+  </div>
+  <div class="trace-grid wrap" style="padding:0;">
+    <a class="card" href="spot-phishing-emails.html">
+      <span class="ref">SEC·02</span>
+      <h3>Spot a phishing email before you click anything</h3>
+      <p>The tells that hold up even as scam emails get better written.</p>
+      <span class="read">Read guide →</span>
+    </a>
+    <a class="card" href="password-manager-setup.html">
+      <span class="ref">SEC·03</span>
+      <h3>Set up a password manager without the headache</h3>
+      <p>A migration path that takes half an hour, not a weekend, and doesn&#x27;t require retyping every login.</p>
+      <span class="read">Read guide →</span>
+    </a>
+    <a class="card" href="check-leaked-password-email.html">
+      <span class="ref">SEC·04</span>
+      <h3>Tell if your email or password has been leaked</h3>
+      <p>How to check for data breaches involving your accounts, and what to actually do about it.</p>
+      <span class="read">Read guide →</span>
+    </a>
+  </div>
+</section>
+
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+    <span class="copyright">© 2026 WorksAsExplained. All rights reserved.</span>
+  </div>
+</footer>
+
+<div id="cookie-banner">
+  <div class="cookie-inner">
+    <p>We use cookies to run this site and, where enabled, to support personalized advertising through Google AdSense. See our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <div class="cookie-actions">
+      <button class="btn" id="cookie-reject">Reject</button>
+      <button class="btn primary" id="cookie-accept">Accept</button>
+    </div>
+  </div>
+</div>
+<script src="../articles-data.js"></script>
+<script src="../search.js"></script>
+<script src="../cookie-consent.js"></script>
+</body>
+</html>
