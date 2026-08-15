@@ -248,6 +248,7 @@ footer.site{border-top:1px solid var(--line); padding:36px 0; margin-top:40px;}
 .btn.primary{background:var(--amber); color:#12100B; border-color:var(--amber); font-weight:600;}
 .btn.primary:hover{background:#f0b357;}
 
+/* ---- Featured article section ---- */
 .featured-section{padding:48px 0 8px; border-bottom:1px solid var(--line);}
 .featured-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:44px;}
 .featured-card{
