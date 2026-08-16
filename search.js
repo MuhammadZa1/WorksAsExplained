@@ -28,7 +28,7 @@
         title: a.title,
         desc: a.desc,
         cat_name: a.cat_name,
-        href: prefix + "articles/" + a.slug + ".html",
+        href: prefix + "articles/" + a.slug,
         haySpaced: haySpaced,
         hayCollapsed: hayCollapsed
       };
